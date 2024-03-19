@@ -1,0 +1,40 @@
+.grid-item{
+    border: 1px solid #ddd;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap if needed */
+    align-items: stretch; 
+    /* overflow: scroll; */
+    overflow: auto;
+  
+  
+  }
+  
+  /* .grid-item2{
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap; /* Allows items to wrap if needed */
+    align-items: stretch; 
+    /* overflow: scroll; */
+    overflow: auto;
+  
+  } */
+  /* .grid-item3{
+    background-color: black;
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    align-items: stretch; 
+  
+    overflow: auto;
+  
+  
+  } */
