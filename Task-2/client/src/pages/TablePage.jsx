@@ -4,7 +4,7 @@ import axios from "axios";
 import TableHeader from "../components/TableHeader";
 import TableContent from "../components/TableContent";
 const TablePage = () => {
-  const BASEURL = "http://localhost:9000";
+  const BASEURL = "https://dataneuron-server.onrender.com";
 
   const [item, setItem] = useState("");
   const [id, setId] = useState("");
