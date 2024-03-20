@@ -20,12 +20,10 @@ app.use("/api", router);
 
 // db
 mongoose.connect(process.env.MONGO_URL).then(() => {
-  app.listen(port, () => {
-    console.log(`Connected to db and app is listening to Port : ${port}`);
-  });
+  console.log("Connected to db ");
 });
 
 // server
-// app.listen(port, () => {
-//   console.log(`server is runnning on port ${port}`);
-// });
+app.listen(port, () => {
+  console.log(`server is runnning on port ${port}`);
+});
