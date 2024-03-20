@@ -19,9 +19,15 @@ app.use(cookieParser());
 app.use("/api", router);
 
 // db
-mongoose.connect(process.env.MONGO_URL).then(() => {
-  console.log("Connected to db ");
-});
+mongoose
+  .connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    socketTimeoutMS: 30000,
+  })
+  .then(() => {
+    console.log("Connected to db ");
+  });
 
 // server
 app.listen(port, () => {
